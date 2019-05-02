@@ -2,18 +2,18 @@
 
 {% block content %}
 
-    <div class="header">
-        <div class="container">
-            <h1>Blog details</h1>
-        </div>
-    </div>
+    
+    
 
     <div class="container">
         <div class="page-body">
             <div>
                 <p class='small'>Published on: {{post.published_date}}</p>
                 <p class='small'>Author: {{post.author}}</p>
-                <h2><a href="{% url 'post_detail' id=post.pk %}">Title: {{post.title}}</a></h2>
+                <div class="row justify-content-between">
+                    <h2><a href="{% url 'post_detail' id=post.pk %}">Title: {{post.title}}</a></h2>
+                    <a href="{% url 'post_edit' id=post.pk %}" class="edit"><i class="fa fa-pencil fa-2x"></i></a>
+                </div>
                 <p>{{post.text|linebreaksbr}}</p>
             </div>
             <hr>
