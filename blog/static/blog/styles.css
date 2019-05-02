@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #2f3368;
+    font-family: 'Lobster';
+}
+
+h2 {
+    color: #528545;
+    font-family: 'Lobster';
+}
+
+.header {
+    padding: 10px;
+    margin-bottom: 30px;
+    background: #dbb591;
+}
+
+.small {
+    font-size: 0.8rem;
+}
