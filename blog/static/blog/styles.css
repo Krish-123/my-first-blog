@@ -7,9 +7,13 @@ h1 {
     font-family: 'Lobster';
 }
 
-h2 {
+h2 a{
     color: #528545;
     font-family: 'Lobster';
+}
+
+h2 a:hover {
+    color: #528545;
 }
 
 .header {

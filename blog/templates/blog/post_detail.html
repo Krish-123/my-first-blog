@@ -1,0 +1,23 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+
+    <div class="header">
+        <div class="container">
+            <h1>Blog details</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="page-body">
+            <div>
+                <p class='small'>Published on: {{post.published_date}}</p>
+                <p class='small'>Author: {{post.author}}</p>
+                <h2><a href="{% url 'post_detail' id=post.pk %}">Title: {{post.title}}</a></h2>
+                <p>{{post.text|linebreaksbr}}</p>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+{% endblock %}
