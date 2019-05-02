@@ -7,7 +7,17 @@
     <title>Post list</title>
 </head>
 <body>
-    <p>Hi there!</p>
-    <p>It works (as if you don't know)</p>
+    <h1>List of posted blogs</h1>
+    <div>
+        {% for post in posts %}
+            <div>
+                <p>Published date: {{post.published_date}}</p>
+                <p>Author: {{post.author}}</p>
+                <h3>Title: {{post.title}}</h3>
+                <p>{{post.text|linebreaksbr}}</p>
+            </div>
+            <hr>
+        {% endfor %}
+    </div>
 </body>
 </html>
